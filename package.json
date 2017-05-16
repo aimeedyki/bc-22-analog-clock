@@ -1,0 +1,26 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "displays an analogue clock showing time according to location",
+  "main": "logic.js",
+  "dependencies": {
+    "firebase": "^3.9.0",
+    "jasmine-node": "^1.14.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimeedyki/bc-22-analog-clock.git"
+  },
+  "author": "Amarachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aimeedyki/bc-22-analog-clock/issues"
+  },
+  "homepage": "https://github.com/aimeedyki/bc-22-analog-clock#readme"
+}
