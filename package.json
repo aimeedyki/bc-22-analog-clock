@@ -2,7 +2,7 @@
   "name": "clock",
   "version": "1.0.0",
   "description": "displays an analogue clock showing time according to location",
-  "main": "logic.js",
+  "main": "canvas.html",
   "dependencies": {
     "firebase": "^3.9.0",
     "jasmine-node": "^1.14.5"
