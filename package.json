@@ -12,7 +12,7 @@
     "start": "node server.js"
   },
   
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aimeedyki/bc-22-analog-clock.git"
