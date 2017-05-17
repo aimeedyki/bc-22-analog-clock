@@ -1,1 +1,1 @@
-web: node canvas.html
+web: node server.js
