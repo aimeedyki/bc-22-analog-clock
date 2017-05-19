@@ -4,8 +4,11 @@
   "description": "displays an analogue clock showing time according to location",
   "main": "logic.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
+    "ejs": "*",
     "express": "^4.15.2",
+    "express-session": "^1.15.3",
     "firebase": "^3.9.0",
     "jasmine-node": "^1.14.5"
   },

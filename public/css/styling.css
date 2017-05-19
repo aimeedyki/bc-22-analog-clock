@@ -1,5 +1,6 @@
 #container {
             background-image: url("mainpic.png");
+            background-blend-mode: lighten;
         }
         
 #first {

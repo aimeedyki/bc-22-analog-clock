@@ -5,39 +5,45 @@
 
     if (type2 === 'Select') {
         alert("No City selected! Please Select a City.");
-    } else if (type2 === 'Accra'|| type2 === 'London' || type2 === 'Lisbon') {
-        offset2 = 2; 
+    } else if (type2 === 'Accra') {
+        offset2 = 0; 
         document.getElementById('zone2').innerHTML = "GREENWICH MEAN TIMEZONE";
     }else if (type2 === 'Baghdad') {
-        offset2 = 4; 
+        offset2 = 3; 
         document.getElementById('zone2').innerHTML = "ARABIA STANDARD TIME";
     } 
     else if (type2 === 'Capetown') {
         offset2 = 2;
-        document.getElementById('zone2').innerHTML = "SOUTH AFRICAN STANDARD TIME";
+        document.getElementById('zone2').innerHTML = "SOUTH AFRICA TIMEZONE";
     } else if (type2 === 'Dubai') {
-        offset2 = 5; 
+        offset2 = 4; 
         document.getElementById('zone2').innerHTML = "GULF STANDARD TIME";
     } else if (type2 === 'Dublin') {
-        offset2 = 2;
+        offset2 = 1;
         document.getElementById('zone2').innerHTML = "IRISH STANDARD TIME";
     } else if (type2 === 'Hongkong') {
-        offset2 = 9;
+        offset2 = 8;
         document.getElementById('zone2').innerHTML = "HONGKONG TIMEZONE";
     } else if (type2 === 'Lagos') {
         offset2 = 1; 
         document.getElementById('zone2').innerHTML = "WEST AFRICA TIMEZONE";
+     }  else if (type2 === 'Lisbon') {
+        offset2 = 1; 
+        document.getElementById('zone2').innerHTML = "WESTERN EUROPEAN TIMEZONE"; 
+    }else if (type2 === 'London') {
+        offset2 = 1; 
+        document.getElementById('zone2').innerHTML = "BRITISH SUMMER TIME";         
     } else if (type2 === 'Paris'|| type2 === 'Rome') {
-        offset2 = 3; 
+        offset2 = 2; 
         document.getElementById('zone2').innerHTML = "CENTRAL EUROPEAN TIMEZONE";
     } else if (type2 === 'Newyork' || type2 === 'Toronto') {
         offset2 = -4;
         document.getElementById('zone2').innerHTML = "EASTERN STANDARD TIMEZONE"; 
     } else if (type2 === 'Saopaulo') {
-        offset2 = -2; 
+        offset2 = -3; 
         document.getElementById('zone2').innerHTML = "BRASILIA TIME";
     } else if (type2 === 'Tokyo') {
-        offset2 = 10; 
+        offset2 = 9; 
         document.getElementById('zone2').innerHTML = "JAPAN STANDARD TIME";
    }
 }
@@ -46,42 +52,48 @@
 const estimateTime3 = () => {
 
     let type3 = $('#type3').val();
-
-   if (type3 === 'Select') {
+  
+    if (type3 === 'Select') {
         alert("No City selected! Please Select a City.");
-    } else if (type3 === 'Accra'|| type3 === 'London' || type3 === 'Lisbon') {
-        offset3 = 2; 
+    } else if (type3 === 'Accra') {
+        offset3 = 0; 
         document.getElementById('zone3').innerHTML = "GREENWICH MEAN TIMEZONE";
-    }else if (type2 === 'Baghdad') {
-        offset3 = 4; 
+    }else if (type3 === 'Baghdad') {
+        offset3 = 3; 
         document.getElementById('zone3').innerHTML = "ARABIA STANDARD TIME";
     } 
     else if (type3 === 'Capetown') {
         offset3 = 2;
-        document.getElementById('zone3').innerHTML = "SOUTH AFRICAN STANDARD TIME";
+        document.getElementById('zone3').innerHTML = "SOUTH AFRICA TIMEZONE";
     } else if (type3 === 'Dubai') {
-        offset3 = 5; 
+        offset3 = 4; 
         document.getElementById('zone3').innerHTML = "GULF STANDARD TIME";
     } else if (type3 === 'Dublin') {
-        offset3 = 2;
+        offset3 = 1;
         document.getElementById('zone3').innerHTML = "IRISH STANDARD TIME";
     } else if (type3 === 'Hongkong') {
-        offset3 = 9;
+        offset3 = 8;
         document.getElementById('zone3').innerHTML = "HONGKONG TIMEZONE";
     } else if (type3 === 'Lagos') {
         offset3 = 1; 
         document.getElementById('zone3').innerHTML = "WEST AFRICA TIMEZONE";
+     }  else if (type3 === 'Lisbon') {
+        offset3 = 1; 
+        document.getElementById('zone3').innerHTML = "WESTERN EUROPEAN TIMEZONE"; 
+    }else if (type3 === 'London') {
+        offset3 = 1; 
+        document.getElementById('zone3').innerHTML = "BRITISH SUMMER TIME";         
     } else if (type3 === 'Paris'|| type3 === 'Rome') {
-        offset3 = 3; 
+        offset3 = 2; 
         document.getElementById('zone3').innerHTML = "CENTRAL EUROPEAN TIMEZONE";
     } else if (type3 === 'Newyork' || type3 === 'Toronto') {
         offset3 = -4;
         document.getElementById('zone3').innerHTML = "EASTERN STANDARD TIMEZONE"; 
     } else if (type3 === 'Saopaulo') {
-        offset3 = -2; 
+        offset3 = -3; 
         document.getElementById('zone3').innerHTML = "BRASILIA TIME";
     } else if (type3 === 'Tokyo') {
-        offset3 = 10; 
+        offset3 = 9; 
         document.getElementById('zone3').innerHTML = "JAPAN STANDARD TIME";
    }
 }
@@ -91,41 +103,48 @@ const estimateTime4 = () => {
 
     let type4 = $('#type4').val();
 
- if (type4 === 'Select') {
+
+    if (type4 === 'Select') {
         alert("No City selected! Please Select a City.");
-    } else if (type4 === 'Accra'|| type4 === 'London' || type4 === 'Lisbon') {
-        offset4 = 2; 
+    } else if (type4 === 'Accra') {
+        offset4 = 0; 
         document.getElementById('zone4').innerHTML = "GREENWICH MEAN TIMEZONE";
     }else if (type4 === 'Baghdad') {
-        offset4 = 4; 
+        offset4 = 3; 
         document.getElementById('zone4').innerHTML = "ARABIA STANDARD TIME";
     } 
     else if (type4 === 'Capetown') {
         offset4 = 2;
-        document.getElementById('zone4').innerHTML = "SOUTH AFRICAN STANDARD TIME";
+        document.getElementById('zone4').innerHTML = "SOUTH AFRICA TIMEZONE";
     } else if (type4 === 'Dubai') {
-        offset4 = 5; 
+        offset4 = 4; 
         document.getElementById('zone4').innerHTML = "GULF STANDARD TIME";
     } else if (type4 === 'Dublin') {
-        offset4 = 2;
+        offset4 = 1;
         document.getElementById('zone4').innerHTML = "IRISH STANDARD TIME";
     } else if (type4 === 'Hongkong') {
-        offset4 = 9;
+        offset4 = 8;
         document.getElementById('zone4').innerHTML = "HONGKONG TIMEZONE";
     } else if (type4 === 'Lagos') {
         offset4 = 1; 
         document.getElementById('zone4').innerHTML = "WEST AFRICA TIMEZONE";
-    } else if (type4 === 'Paris'|| type2 === 'Rome') {
-        offset4 = 3; 
+     }  else if (type4 === 'Lisbon') {
+        offset4 = 1; 
+        document.getElementById('zone4').innerHTML = "WESTERN EUROPEAN TIMEZONE"; 
+    }else if (type4 === 'London') {
+        offset4 = 1; 
+        document.getElementById('zone4').innerHTML = "BRITISH SUMMER TIME";         
+    } else if (type4 === 'Paris'|| type4 === 'Rome') {
+        offset4 = 2; 
         document.getElementById('zone4').innerHTML = "CENTRAL EUROPEAN TIMEZONE";
-    } else if (type4 === 'Newyork' || type2 === 'Toronto') {
+    } else if (type4 === 'Newyork' || type4 === 'Toronto') {
         offset4 = -4;
         document.getElementById('zone4').innerHTML = "EASTERN STANDARD TIMEZONE"; 
     } else if (type4 === 'Saopaulo') {
-        offset4 = -2; 
+        offset4 = -3; 
         document.getElementById('zone4').innerHTML = "BRASILIA TIME";
     } else if (type4 === 'Tokyo') {
-        offset4 = 10; 
+        offset4 = 9; 
         document.getElementById('zone4').innerHTML = "JAPAN STANDARD TIME";
    }
 }
@@ -188,13 +207,13 @@ const estimateTime4 = () => {
             let localTime = date.getTime();
             let localOffset = date.getTimezoneOffset() * 60000;
             let utc = localTime + localOffset;
-            //offset = 1; //UTC of lagos is +00.00
+         
             let country = utc + (3600000 * offset);
             let newDate = new Date(country);
             let hour = newDate.getHours();
             let minute = newDate.getMinutes();
             let second = newDate.getSeconds();
-            //hour
+      
             hour = hour % 12;
             hour = (hour * Math.PI / 6) +
                 (minute * Math.PI / (6 * 60)) +
@@ -226,7 +245,7 @@ const estimateTime4 = () => {
         let radius2 = canvas2.height / 2;
         ctx2.translate(radius2, radius2);
         radius2 = radius2 * 0.90
-        //drawClock2();
+        
         setInterval(drawClock2, 1000);
 
         function drawClock2() {
@@ -278,10 +297,9 @@ const estimateTime4 = () => {
             let localTime2 = date2.getTime();
             let localOffset2 = date2.getTimezoneOffset() * 60000;
             let utc2 = localTime2 + localOffset2;
-            //let offset2 = 4; //UTC of baghdad is +03.00
+            
             let country = utc2 + (3600000 * offset2);
-            //let newDate2 = new Date(country);
-            //let baghdad = currentTime.setHours(currentTime.getHours() + 4);
+            
             let newDate2 = new Date(country);
             let hour2 = newDate2.getHours();
             let minute2 = newDate2.getMinutes();
@@ -370,22 +388,22 @@ const estimateTime4 = () => {
             let localTime3 = date3.getTime();
             let localOffset3 = date3.getTimezoneOffset() * 60000;
             let utc3 = localTime3 + localOffset3;
-            //let offset3 = -5; //UTC of New York is -06.00
+          
             let newyork = utc3 + (3600000 * offset3);
             let newDate3 = new Date(newyork);
             let hour3 = newDate3.getHours();
             let minute3 = newDate3.getMinutes();
             let second3 = newDate3.getSeconds();
-            //hour
+           
             hour3 = hour3 % 12;
             hour3 = (hour3 * Math.PI / 6) +
                 (minute3 * Math.PI / (6 * 60)) +
                 (second3 * Math.PI / (360 * 60));
             drawHand3(ctx3, hour3, radius3 * 0.5, radius3 * 0.07);
-            //minute
+            
             minute3 = (minute3 * Math.PI / 30) + (second3 * Math.PI / (30 * 60));
             drawHand3(ctx3, minute3, radius3 * 0.8, radius3 * 0.07);
-            // second
+            
             second3 = (second3 * Math.PI / 30);
             drawHand3(ctx3, second3, radius3 * 0.9, radius3 * 0.02);
         }
@@ -401,13 +419,13 @@ const estimateTime4 = () => {
             ctx3.rotate(-pos3);
         }
 
-        //controls for fourth clock
+     
         let canvas4 = document.getElementById("canvas4");
         let ctx4 = canvas4.getContext("2d");
         let radius4 = canvas4.height / 2;
         ctx4.translate(radius4, radius4);
         radius4 = radius4 * 0.90
-        //drawClock4();
+     
         setInterval(drawClock4, 1000);
 
         function drawClock4() {
@@ -460,22 +478,22 @@ const estimateTime4 = () => {
             let localTime4 = date4.getTime();
             let localOffset4 = date4.getTimezoneOffset() * 60000;
             let utc4 = localTime4 + localOffset4;
-            //let offset4 = 9; //UTC of japan is +09.00
+          
             let japan = utc4 + (3600000 * offset4);
             let newDate4 = new Date(japan);
             let hour4 = newDate4.getHours();
             let minute4 = newDate4.getMinutes();
             let second4 = newDate4.getSeconds();
-            //hour
+           
             hour4 = hour4 % 12;
             hour4 = (hour4 * Math.PI / 6) +
                 (minute4 * Math.PI / (6 * 60)) +
                 (second4 * Math.PI / (360 * 60));
             drawHand4(ctx4, hour4, radius4 * 0.5, radius4 * 0.07);
-            //minute
+
             minute4 = (minute4 * Math.PI / 30) + (second4 * Math.PI / (30 * 60));
             drawHand4(ctx4, minute4, radius4 * 0.8, radius4 * 0.07);
-            // second
+           
             second4 = (second4 * Math.PI / 30);
             drawHand4(ctx4, second4, radius4 * 0.9, radius4 * 0.02);
         }
