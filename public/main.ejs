@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>World Clock</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel = "stylesheet" type = "text/css" href = "css/styling.css" />
+
+        
+</head>
+<span><a style="id = "signout" href="/login" style = "text-align:right">Sign Out</a>"></span>
+
+<body id="container">
+    <div id="first">
+        <h1 style="color:#7CFC00" id="worldclock"><strong>CLOCKS OF THE WORLD<strong></h1>
+    </div>
+    <div>
+    <p style="color: white">SELECT CURRENT LOCATION:
+    <select id="type1">
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option> 
+            </select>
+            <input onClick="estimateTime1()" type="submit" value="SUBMIT" /> 
+        </p>
+    </div>
+     <div id="second">
+        <div class="box">
+            <p style="color: white"><b>TIME IN YOUR LOCATION</b></p>
+            <canvas id="canvas" class = "canvas" width="250" height="250" style="background-color:transparent"></canvas>
+            <p id = "zone1" style="color: black" ><b></b></p>
+        </div>
+
+        <div class="box">
+            <select id="type2">
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option> 
+            </select>
+            <input onClick="estimateTime2()" type="submit" value="SEARCH" />
+            <canvas id="canvas2" class = "canvas" width="250" height="250" style="background-color:transparent"></canvas>
+            <p id = "zone2" style="color: black" ><b></b></p>
+        </div>
+
+        <div class="box">
+            <select id="type3">
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option> 
+            </select>
+            <input onClick="estimateTime3()" type="submit" value="SEARCH" />
+            <canvas id="canvas3" class = "canvas" width="250" height="250" style="background-color:transparent"></canvas>
+            <p id = "zone3" style="color: black" ><b></b></p>
+        </div>
+
+        <div class="box">
+            <select id="type4">
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option> 
+            </select>
+            </select>
+            <input onClick="estimateTime4()" type="submit" value="SEARCH" />
+            <canvas id="canvas4" class = "canvas" width="250" height="250" style="background-color:transparent"></canvas>
+            <p id = "zone4" style="color: black" style="background-color: white"><b></b></p>           
+        </div>
+    </div>
+    <div>
+
+
+    
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+
+
+</body>
+
+</html>

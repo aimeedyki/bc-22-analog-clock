@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="draw.css" />
+</head>
+
+<body>
+<h1 style="color:#7CFC00">CLOCKS BY LOCATION</h1>
+<table>
+  <tr>
+    <th style="color:#808080">CURRENT TIME IN YOUR TIME ZONE</th>
+    <th class="location">City:
+            <select id="city" >
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option>            
+            </select>
+            <input onClick="getSearch()" type="submit" value="SEARCH" />
+    </th>
+     <th class="location">City:
+            <select id="city2" >
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option>            
+            </select>
+            <input onClick="getSearch()" type="submit" value="SEARCH" />
+    </th>
+  </tr>
+  <tr>
+    <td>
+    <canvas id="canvas1" width="400" height="400" style="background-color: linear-gradient(white, #808080)"></canvas>
+    </td>
+    <td>
+    <canvas id="canvas2" width="400" height="400" style="background-color: linear-gradient(#808080"></canvas>
+    </td>
+    <td>
+    <canvas id="canvas3" width="400" height="400" style="background-color: linear-gradient(white, #808080)"></canvas>   
+    </td>
+  </tr>
+  <tr>
+  <td style="color:white" style="text-align:center"><b>WEST AFRICA TIMEZONE</b></td>
+  <td id="timeZone" style="color:white"><b></b></td>
+  <td id="timeZone" style="color:white"><b></b></td>
+  </tr>
+
+  
+
+</body>
+<script src="try.js">
+</script>
+<script src="jquery-1.10.2.min.js"></script>
+
+
+</html>
+
+
+
+
+ 

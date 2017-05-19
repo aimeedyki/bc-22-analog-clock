@@ -1,0 +1,25 @@
+body{
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+ background: linear-gradient(white, #808080);
+}
+h1 {
+	text-align:center;
+    text-shadow: 2px 2px #808080;
+}
+#location{
+	text-shadow: 2px 2px #7CFC00
+	color:#808080
+}
+canvas{
+	margin-left:20 px;
+}
+}
+#clockTitle
+{
+color: #808080
+margin-top:25px
+background-color: #7CFC00
+}
