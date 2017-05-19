@@ -45,23 +45,20 @@ app.get('/login', function (req, res) {
   res.render(process.env.rootPath + '/public/login.ejs');
 });
 
-app.post('/login', function (req, res) {  
+app.post('/login', function (req, res) {   
   var email = req.body.email ;
   var pass = req.body.psw;
   const auth = firebase.auth();
   const promise = auth.signInWithEmailAndPassword(email, pass);
-    promise.catch(e=> console.log(e.message));
-  res.render(process.env.rootPath + '/public/main.ejs');
+  promise.then(()=> {
+  	res.render(process.env.rootPath + '/public/main.ejs');
+  })
+  promise.catch(() => {
+  	 res.render(process.env.rootPath + '/public/login.ejs');
+  });
+  
 });
 
-// firebase.auth().onAuthStateChanged(
-//     firebaseUser =>{
-//       if(firebaseUser){
-//         window.location.href = "/main.html";
-//         }else {
-//           console.log('not logged in')
-//         }
-//     });
 
 
 
@@ -75,14 +72,13 @@ app.get('/', function(req, res, next) {
     description: 'Provide the details to signup for app'});
 });
 app.post('/signup', function(req, res, next) {
-  var FirebaseRef = require('./fireb');
   var firstname =req.body.firstname;
   var lastname = req.body.lastname;
   var email = req.body.email;
   var password = req.body.password;
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then(userData => { 
+    .then((userData) => { 
       var user = {
         uid: userData.uid,
         email: email,
@@ -93,7 +89,7 @@ app.post('/signup', function(req, res, next) {
       var userRef = firebase.database().ref('user/');
       userRef.child(userData.uid).update(user);
       req.session.user = user
-      res.redirect('/main.ejs');
+      res.render(process.env.rootPath + '/public/main.ejs');
     })
     .catch(error => {      
       var errorCode = error.code;
