@@ -17,12 +17,34 @@
     <div id="first">
         <h1 style="color:#7CFC00" id="worldclock"><strong>CLOCKS OF THE WORLD<strong></h1>
     </div>
-
+    <div>
+    <p style="color: white">SELECT CURRENT LOCATION:
+    <select id="type1">
+            <option value="Select">Select City</option>
+            <option value="Accra">ACCRA</option>
+            <option value="Baghdad">BAGHDAD</option>
+            <option value="Capetown">CAPETOWN</option>
+            <option value="Dubai">DUBAI</option>
+            <option value="Dublin">DUBLIN</option>
+            <option value="Hongkong">HONGKONG</option>
+            <option value="Lagos">LAGOS</option>
+            <option value="Lisbon">LISBON</option>
+            <option value="London">LONDON</option>
+            <option value="Paris">PARIS</option>
+            <option value="Newyork">NEWYORK</option>
+            <option value="Rome">ROME</option>
+            <option value="Saopaulo">SAO PAULO</option>
+            <option value="Tokyo">TOKYO</option>
+            <option value="Toronto">TORONTO</option> 
+            </select>
+            <input onClick="estimateTime1()" type="submit" value="SUBMIT" /> 
+        </p>
+    </div>
      <div id="second">
         <div class="box">
             <p style="color: white"><b>TIME IN YOUR LOCATION</b></p>
             <canvas id="canvas" class = "canvas" width="250" height="250" style="background-color:transparent"></canvas>
-            <p style="color: black" ><b>WEST AFRICA TIMEZONE</b></p>
+            <p id = "zone1" style="color: black" ><b></b></p>
         </div>
 
         <div class="box">

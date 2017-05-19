@@ -1,4 +1,52 @@
 
+const estimateTime1 = () => {
+    
+    let type1 = $('#type1').val();
+
+    if (type1 === 'Select') {
+        alert("No City selected! Please Select a City.");
+    } else if (type1 === 'Accra') {
+        offset1 = 0; 
+        document.getElementById('zone1').innerHTML = "GREENWICH MEAN TIMEZONE";
+    }else if (type1 === 'Baghdad') {
+        offset1 = 3; 
+        document.getElementById('zone1').innerHTML = "ARABIA STANDARD TIME";
+    } 
+    else if (type1 === 'Capetown') {
+        offset1 = 2;
+        document.getElementById('zone1').innerHTML = "SOUTH AFRICA TIMEZONE";
+    } else if (type1 === 'Dubai') {
+        offset1 = 4; 
+        document.getElementById('zone1').innerHTML = "GULF STANDARD TIME";
+    } else if (type1 === 'Dublin') {
+        offset1 = 1;
+        document.getElementById('zone1').innerHTML = "IRISH STANDARD TIME";
+    } else if (type1 === 'Hongkong') {
+        offset1 = 8;
+        document.getElementById('zone1').innerHTML = "HONGKONG TIMEZONE";
+    } else if (type1 === 'Lagos') {
+        offset1 = 1; 
+        document.getElementById('zone1').innerHTML = "WEST AFRICA TIMEZONE";
+     }  else if (type1 === 'Lisbon') {
+        offset1 = 1; 
+        document.getElementById('zone1').innerHTML = "WESTERN EUROPEAN TIMEZONE"; 
+    }else if (type1 === 'London') {
+        offset1 = 1; 
+        document.getElementById('zone1').innerHTML = "BRITISH SUMMER TIME";         
+    } else if (type1 === 'Paris'|| type1 === 'Rome') {
+        offset1 = 2; 
+        document.getElementById('zone1').innerHTML = "CENTRAL EUROPEAN TIMEZONE";
+    } else if (type1 === 'Newyork' || type1 === 'Toronto') {
+        offset1 = -4;
+        document.getElementById('zone1').innerHTML = "EASTERN STANDARD TIMEZONE"; 
+    } else if (type1 === 'Saopaulo') {
+        offset1 = -3; 
+        document.getElementById('zone1').innerHTML = "BRASILIA TIME";
+    } else if (type1 === 'Tokyo') {
+        offset1 = 9; 
+        document.getElementById('zone1').innerHTML = "JAPAN STANDARD TIME";
+   }
+}
    const estimateTime2 = () => {
 
     let type2 = $('#type2').val();
